@@ -1,6 +1,8 @@
+var LessHint = require('lesshint');
 module.exports = function(source) {
     this.cacheable();
-    //var callback = this.async();
-    console.log(source);
+    var lessHint = new LessHint(); 
+    var defaultReporter = lessHint.getReporter();
+    defaultReporter.report(lessHint.checkString(source))
     return source;
 };
