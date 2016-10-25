@@ -8,21 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grofzero/lesslint-loader.git"
+    "url": "git+https://github.com/grofzero/lesshint-webpack-plugin.git"
   },
   "keywords": [
-    "lint",
-    "linter",
-    "lesslint",
-    "loader",
+    "hint",
+	"hinter",
+    "lesshint",
+	"less",
     "webpack"
   ],
   "author": "Kornel Horvath",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/grofzero/lesslint-loader/issues"
+    "url": "https://github.com/grofzero/lesshint-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/grofzero/lesslint-loader#readme",
+  "homepage": "https://github.com/grofzero/lesshint-webpack-plugin#readme",
   "peerDependencies": {
     "lesshint": "^2.0.0"
   },
