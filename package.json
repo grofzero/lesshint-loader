@@ -27,6 +27,10 @@
     "lesshint": "^2.0.0"
   },
   "dependencies": {
-    "glob": "7.1.1"
+    "arrify": "1.0.1",
+    "glob": "7.1.1",
+    "glob-array": "0.1.2",
+    "lesshint-reporter-stylish": "1.0.0",
+    "multi-glob": "1.0.1"
   }
 }
