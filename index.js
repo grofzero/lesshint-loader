@@ -1,5 +1,5 @@
 var LessHint = require('lesshint');
-var glob = require("multi-glob").glob;
+var glob = require('glob-all');
 var arrify = require('arrify');
 function LessHintPlugin(options, lessOptions) {
     this.options = options || {};
@@ -11,7 +11,7 @@ LessHintPlugin.prototype.apply = function (compiler) {
     lessHint.configure(this.lessOptions);
     //var defaultReporter = lessHint.getReporter(require('lesshint-reporter-stylish'));
     var defaultReporter = lessHint.getReporter();
-    glob(arrify(this.options.files || ''), function (err, files) {
+    glob(this.options.files || '', function (err, files) {
         if (err) {
             throw new Error('Error processing files');
         }
