@@ -1,7 +1,7 @@
 {
-  "name": "lesslint-loader",
+  "name": "lesshint-webpack-plugin",
   "version": "0.0.1",
-  "description": "lesslint loader (for webpack)",
+  "description": "lesshint webpack plugin",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,5 +25,8 @@
   "homepage": "https://github.com/grofzero/lesslint-loader#readme",
   "peerDependencies": {
     "lesshint": "^2.0.0"
+  },
+  "dependencies": {
+    "glob": "7.1.1"
   }
 }
