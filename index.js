@@ -1,4 +1,4 @@
-var LessHint = require('lesshint');
+var LessHint = require('lesshint').Lesshint;
 var glob = require('glob-all');
 var arrify = require('arrify');
 function LessHintPlugin(options) {
