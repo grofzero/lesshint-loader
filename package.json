@@ -1,6 +1,6 @@
 {
   "name": "lesshint-webpack-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "lesshint webpack plugin",
   "main": "index.js",
   "scripts": {
@@ -12,9 +12,9 @@
   },
   "keywords": [
     "hint",
-	"hinter",
+    "hinter",
     "lesshint",
-	"less",
+    "less",
     "webpack"
   ],
   "author": "Kornel Horvath",
