@@ -35,6 +35,6 @@ module.exports = {
 
 See [lesshint options](https://www.npmjs.com/package/lesshint#configuration), for the complete list of options.
 
-* `configFile`: You can set the config file location for your lesshint options
+* `configFile`: You can set the config file location for your lesshint options, remove to use .lesshintrc file
 * `files`: You can set the glob pattern for finding files.
 * `reporter`: You can set the reporter for lesshint. Default: `lesshint-reporter-stylish`
