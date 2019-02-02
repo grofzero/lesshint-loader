@@ -1,17 +1,17 @@
-var LessHint = require('lesshint').Lesshint;
+const LessHint = require('lesshint').Lesshint;
 function LessHintPlugin(options) {
 	this.options = options || {};
 	this.lessOptions = options.configFile || __dirname;
 }
 
 LessHintPlugin.prototype.apply = function (compiler) {
-	var self = this;
-	compiler.plugin('done', function () {
-		var lessHint = new LessHint();
-		const config = lessHint.getConfig(self.lessOptions)
+	compiler.hooks.done.tap('LessHintPlugin', params => {
+		const lessHint = new LessHint();
+		const config = lessHint.getConfig(this.lessOptions)
 		lessHint.configure(config);
-		var reporter = self.options.reporter || require('lesshint-reporter-stylish');
-		const result = lessHint.checkFiles(self.options.files);
+		const reporter = this.options.reporter || require('lesshint-reporter-stylish');
+		const result = lessHint.checkFiles(this.options.files);
+		
 		result.then((report) => {
 			reporter.report(report);
 		}).catch((err) => {

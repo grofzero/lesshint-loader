@@ -18,11 +18,11 @@ module.exports = {
   plugins: [
     new LessHintPlugin({
           files: [
-                __dirname + './source/applications/**/*.less',
-                __dirname + './source/frame/**/*.less',
-                __dirname + '!./source/frame/bootstrap/**/*.less',
-                __dirname + './source/modules/**/*.less',
-                __dirname + './source/layouts/**/*.less',
+                path.join(__dirname , './source/applications/**/*.less'),
+                path.join(__dirname , './source/frame/**/*.less'),
+                path.join(__dirname , '!./source/frame/bootstrap/**/*.less'),
+                path.join(__dirname , './source/modules/**/*.less'),
+                path.join(__dirname , './source/layouts/**/*.less')
           ],
           configFile: path.resolve(__dirname, '.lesshintrc')
       })
